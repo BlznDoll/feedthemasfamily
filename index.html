@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Feed Them As Family - Real & Raw Dog Food</title>
+
     <meta name="description" content="Feed Them As Family offers real and raw dog food made with high-quality ingredients. Our mission is to provide dogs with nutritious meals that promote their health and well-being.">
     <meta name="keywords" content="dog food, raw dog food, real dog food, nutritious dog meals, healthy dog food, Feed Them As Family">
     <meta name="author" content="Feed Them As Family">
@@ -12,20 +14,20 @@
     <meta property="og:image" content="https://feedthemasfamily.com/images/og-image.jpg">
     <meta property="og:url" content="https://feedthemasfamily.com">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header class="header">
-        <div class="logo">Feed Them As Family</div>
+        <div class="logo"><a href="#home">Feed Them As Family</a></div>
 
         <nav class="nav">
-            <a href="#home">Home</a>
             <a href="#story">Our Story</a>
             <a href="#benefits">Why Raw?</a>
             <a href="products.html">Products</a>
-            <a href="#profile">Pet Profile</a>
-            <a href="#contact">Contact</a>
+            <a href="pet-profile.html">Pet Profile</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
 
@@ -43,13 +45,14 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="#products" class="btn primary">Shop Meals</a>
-                    <a href="#profile" class="btn secondary">Create Pet Profile</a>
+                    <a href="products.html" class="btn primary">Shop Meals</a>
+                    <a href="pet-profile.html" class="btn secondary">Create Pet Profile</a>
                 </div>
             </div>
 
             <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=900&q=80" alt="Happy dog eating healthy food" />
+                <img src="https://images.unsplash.com/photo-1601758174114-e711c0cbaa69?auto=format&fit=crop&w=900&q=80" 
+                alt="Happy dog eating healthy food" loading="lazy"/>
             </div>
         </section>
 
@@ -110,17 +113,18 @@
 
         <section class="story" id="story">
             <div>
-                <p>Our Story</p>
+                <p class="eyebrow">Our Story</p>
                 <h2>Why Feed Them As Family Exists</h2>
                 <p>
                     Feed Them As Family was created from love, research, and the belief that dogs
                     deserve better than mystery ingredients and over-processed food. This mission 
                     is personal.
                 </p>
-                <a href="story.html" class="btn secondary">Read Our Story</a>
+                <a href="story.html" class="btn primary">Read Our Story</a>
             </div>
 
-            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80" alt="Dog with owner" />
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80" alt="Dog with owner"
+            loading="lazy" />
         </section>
 
         <section class="trust">
@@ -157,23 +161,6 @@
                     <strong> -- Dog Parent</strong>
                 </div>
             </div>
-        </section>
-
-        <section class="profile" id="profile">
-            <p class="eyebrow">Get Started</p>
-            <h2>Create Your Pet Profile</h2>
-            <p>Tell us about your dog and we'll help guide you toward the right meal plan.</p>
-
-            <form>
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Email Address" required />
-                <input type="text" placeholder="Dog's Name" required />
-                <input type="text" placeholder="Dog's Breed" required />
-                <input type="number" placeholder="Dog's Age" required />
-                <input type="number" placeholder="Dog's Weight (lbs)" required />
-                <textarea placeholder="Any special dietary needs or health concerns?" required></textarea>
-                <button type="submit" class="btn primary">Submit</button>
-            </form>
         </section>
     </main>
 
