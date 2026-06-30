@@ -6,22 +6,26 @@
 
   <title>Contact | Feed Them As Family</title>
 
-  <meta name="description" content="Have questions about raw feeding or our products? Contact Feed Them As Family for personalized support and guidance on providing the best nutrition for your dog." />
-  <meta name="keywords" content="contact Feed Them As Family, raw feeding questions, product support, custom meal plans, dog nutrition advice" />
+  <meta name="description" content="Contact Feed Them As Family with questions about raw feeding, products, custom meal plans, or order support." />
+  <meta name="keywords" content="contact Feed Them As Family, raw feeding questions, dog food, custom meal plans, dog nutrition" />
   <meta name="author" content="Feed Them As Family" />
+
   <meta property="og:title" content="Contact | Feed Them As Family" />
-  <meta property="og:description" content="Have questions about raw feeding or our products? Contact Feed Them As Family for personalized support and guidance on providing the best nutrition for your dog." />
+  <meta property="og:description" content="Have questions about raw feeding or our products? Contact Feed Them As Family for support." />
   <meta property="og:image" content="https://feedthemasfamily.com/images/og-contact.jpg" />
   <meta property="og:url" content="https://feedthemasfamily.com/contact.html" />
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-
   <header class="header">
-    <div class="logo"><a href="index.html">Feed Them As Family</a></div>
+    <div class="logo">
+      <a href="index.html">Feed Them As Family</a>
+    </div>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
       <a href="index.html#story">Our Story</a>
       <a href="index.html#benefits">Why Raw?</a>
       <a href="products.html">Shop</a>
@@ -31,70 +35,197 @@
   </header>
 
   <main>
-
     <section class="contact-hero">
       <p class="eyebrow">Contact Us</p>
       <h1>Have Questions About Raw Feeding?</h1>
       <p>
-        We’re here to help you choose the right meals for your dog.
-        Send us a message and we’ll get back to you soon.
+        Whether you're just beginning your raw feeding journey or looking for meals
+        tailored to your dog's unique needs, we're here to help.
       </p>
     </section>
 
     <section class="contact-section">
-        <div class="contact-info">
-        <h2>Get in Touch</h2>
+      <div class="contact-form-area">
+        <p class="eyebrow">Send Us a Message</p>
+        <h2>How Can We Help?</h2>
         <p>
-          Whether you’re new to raw feeding or ready to build a custom meal plan,
-          we’d love to hear from you.
+          Complete the form below and we'll get back to you soon.
         </p>
 
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Email Address" required />
-            <input type="text" placeholder="Dog's Name" />
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
 
-            <select required>
-                <option value="">What do you need help with?</option>
-                <option>Raw Feeding Questions</option>
-                <option>Custom Meal Plan</option>
-                <option>Product Questions</option>
-                <option>Order Support</option>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number <span>(optional)</span></label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+
+          <div class="form-group">
+            <label for="dog-name">Dog's Name <span>(optional)</span></label>
+            <input id="dog-name" name="dog-name" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="topic">What do you need help with?</label>
+            <select id="topic" name="topic" required>
+              <option value="">Choose one</option>
+              <option value="raw-feeding">Raw Feeding Questions</option>
+              <option value="meal-recommendations">Meal Recommendations</option>
+              <option value="custom-meal-plan">Custom Meal Plan</option>
+              <option value="product-questions">Product Questions</option>
+              <option value="order-support">Order Support</option>
+              <option value="general">General Inquiry</option>
             </select>
+          </div>
 
-            <textarea placeholder="Write your message here..." required></textarea>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+          </div>
 
-            <button type="submit" class="btn primary">Send Message</button>
+          <button type="submit" class="btn primary">Send Message</button>
+
+          <p class="form-note">
+            We typically respond within one business day.
+          </p>
         </form>
+      </div>
 
+      <aside class="contact-sidebar">
         <div class="contact-card">
-            <h3>Email</h3>
-            <p>hello@feedthemasfamily.com</p>
-        </div>
-
-        <div class="contact-card">
-            <h3>Phone</h3>
-            <p>(555) 555-5555</p>
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email</h3>
+          <p>hello@feedthemasfamily.com</p>
         </div>
 
         <div class="contact-card">
-            <h3>Location</h3>
-            <p>Cincinnati, Ohio</p>
+          <i class="fa-solid fa-phone"></i>
+          <h3>Phone</h3>
+          <p>(555) 555-5555</p>
         </div>
 
         <div class="contact-card">
-            <h3>Hours</h3>
-            <p>Monday – Friday<br />9:00 AM – 5:00 PM</p>
-        </div>
+          <i class="fa-solid fa-location-dot"></i>
+          <h3>Location</h3>
+          <p>Cincinnati, Ohio</p>
         </div>
 
+        <div class="contact-card">
+          <i class="fa-solid fa-clock"></i>
+          <h3>Business Hours</h3>
+          <p>
+            Monday – Friday<br />
+            9:00 AM – 5:00 PM<br />
+            Saturday by appointment<br />
+            Sunday closed
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <i class="fa-solid fa-paw"></i>
+          <h3>Need Feeding Help?</h3>
+          <p>
+            For personalized meal recommendations, complete our Pet Profile so we
+            can learn more about your dog.
+          </p>
+          <a href="pet-profile.html" class="text-link">Complete Pet Profile</a>
+        </div>
+      </aside>
     </section>
 
-    </main>
+    <section class="help-section">
+      <p class="eyebrow">We're Happy to Help</p>
+      <h2>Contact Us For</h2>
 
-    <footer class="footer" id="contact">
-        <p>&copy; 2026 Feed Them As Family. All rights reserved. | Website made with ❤️ by BlznDoll Designs</p>
-    </footer>
+      <div class="help-grid">
+        <div class="help-card">
+          <i class="fa-solid fa-bone"></i>
+          <h3>Raw Feeding Questions</h3>
+          <p>Ask about getting started, safe handling, or switching from kibble.</p>
+        </div>
 
+        <div class="help-card">
+          <i class="fa-solid fa-bowl-food"></i>
+          <h3>Meal Recommendations</h3>
+          <p>Get help choosing meals based on your dog's needs and preferences.</p>
+        </div>
+
+        <div class="help-card">
+          <i class="fa-solid fa-truck"></i>
+          <h3>Order Support</h3>
+          <p>Ask questions about orders, pickup, delivery, or product availability.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <p class="eyebrow">Common Questions</p>
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>How quickly will I receive a response?</summary>
+        <p>Most messages are answered within one business day.</p>
+      </details>
+
+      <details>
+        <summary>I'm new to raw feeding. Can you help?</summary>
+        <p>
+          Yes. We can answer beginner questions and help guide you toward the
+          right next step for your dog.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can you recommend meals for my dog?</summary>
+        <p>
+          Yes. For the best recommendation, complete our Pet Profile so we can
+          learn about your dog's age, weight, activity level, and needs.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you offer custom meal plans?</summary>
+        <p>
+          Yes. We can help with custom meal options based on your dog's needs,
+          preferences, and sensitivities.
+        </p>
+      </details>
+    </section>
+
+    <section class="social-section">
+      <p class="eyebrow">Stay Connected</p>
+      <h2>Follow Feed Them As Family</h2>
+      <p>
+        Follow us for raw feeding tips, product updates, and happy dog stories.
+      </p>
+
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a href="#" aria-label="TikTok">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Feed Them As Family. All rights reserved.</p>
+    <p>Website made with ❤️ by Jacqueline McRoberts</p>
+  </footer>
 </body>
 </html>

@@ -1,63 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Our Story - Feed Them As Family</title>
+  <title>Pet Profile | Feed Them As Family</title>
 
-    <meta name="description" content="Learn about the story behind Feed Them As Family, our mission to provide real and raw dog food, and our commitment to promoting the health and well-being of dogs.">
-    <meta name="keywords" content="Feed Them As Family story, our mission, real dog food, raw dog food, dog nutrition, healthy dog food">
-    <meta name="author" content="Feed Them As Family">
-    <meta property="og:title" content="Pet Profile - Feed Them As Family">
-    <meta property="og:description" content="Learn about the story behind Feed Them As Family, our mission to provide real and raw dog food, and our commitment to promoting the health and well-being of dogs.">
-    <meta property="og:image" content="https://feedthemasfamily.com/images/og-profile.jpg">
-    <meta property="og:url" content="https://feedthemasfamily.com/profile.html">
+  <meta name="description" content="Create a pet profile with Feed Them As Family to receive personalized raw dog food meal recommendations based on your dog's age, weight, activity level, and needs." />
+  <meta name="keywords" content="pet profile, raw dog food recommendation, dog meal plan, custom dog food, Feed Them As Family" />
+  <meta name="author" content="Feed Them As Family" />
 
-    <link rel="stylesheet" href="styles.css">
+  <meta property="og:title" content="Pet Profile | Feed Them As Family" />
+  <meta property="og:description" content="Tell us about your dog and receive personalized raw dog food meal recommendations." />
+  <meta property="og:image" content="https://feedthemasfamily.com/images/og-profile.jpg" />
+  <meta property="og:url" content="https://feedthemasfamily.com/pet-profile.html" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header class="header">
-        <div class="logo"><a href="index.html#home">Feed Them As Family</a></div>
-        <nav class="nav">
-            <a href="index.html#story">Our Story</a>
-            <a href="index.html#benefits">Why Raw?</a>
-            <a href="products.html">Products</a>
-            <a href="pet-profile.html">Pet Profile</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
+  <header class="header">
+    <div class="logo">
+      <a href="index.html#home">Feed Them As Family</a>
+    </div>
 
-    <main>
-        <section class="profile-hero">
-            <p class="eyebrow">Pet Profile</p>
-            <h1>Tell Us About Your Dog</h1>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html#story">Our Story</a>
+      <a href="index.html#benefits">Why Raw?</a>
+      <a href="products.html">Products</a>
+      <a href="pet-profile.html">Pet Profile</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="profile-hero">
+      <p class="eyebrow">Pet Profile</p>
+      <h1>Tell Us About Your Dog</h1>
+      <p>
+        Every dog is different. Complete this profile so we can better understand
+        your dog's age, size, activity level, eating habits, and nutritional needs.
+      </p>
+
+      <a href="#profile-form" class="btn primary">Start Pet Profile</a>
+    </section>
+
+    <section class="profile-intro">
+      <p class="eyebrow">Personalized Nutrition</p>
+      <h2>Raw Feeding Made For Your Dog</h2>
+      <p>
+        This form helps us recommend meals and portions based on your dog’s
+        lifestyle. Whether your dog is a puppy, senior, active companion, or picky
+        eater, we’ll use this information to guide you toward better options.
+      </p>
+
+      <div class="profile-benefits">
+        <div class="profile-card">
+          <i class="fa-solid fa-dog"></i>
+          <h3>Dog-Specific Info</h3>
+          <p>We look at your dog’s age, weight, breed, and activity level.</p>
+        </div>
+
+        <div class="profile-card">
+          <i class="fa-solid fa-bowl-food"></i>
+          <h3>Meal Guidance</h3>
+          <p>We help you choose meal options that fit your dog’s needs.</p>
+        </div>
+
+        <div class="profile-card">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h3>Wellness Goals</h3>
+          <p>Tell us about allergies, digestion, coat health, and food sensitivities.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-section" id="profile-form">
+      <div class="profile-form-area">
+        <p class="eyebrow">Get Started</p>
+        <h2>Create Your Dog's Profile</h2>
+        <p>
+          Fill out the form below and we’ll review your answers to help recommend
+          raw meal options for your dog.
+        </p>
+
+        <form class="profile-form" action="#" method="post">
+          <fieldset>
+            <legend>Your Information</legend>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="owner-name">Your Name</label>
+                <input id="owner-name" name="owner-name" type="text" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input id="email" name="email" type="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number <span>(optional)</span></label>
+                <input id="phone" name="phone" type="tel" />
+              </div>
+
+              <div class="form-group">
+                <label for="contact-method">Preferred Contact Method</label>
+                <select id="contact-method" name="contact-method">
+                  <option value="">Choose one</option>
+                  <option value="email">Email</option>
+                  <option value="phone">Phone</option>
+                  <option value="text">Text</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dog Information</legend>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="dog-name">Dog's Name</label>
+                <input id="dog-name" name="dog-name" type="text" required />
+              </div>
+
+              <div class="form-group">
+                <label for="breed">Breed</label>
+                <input id="breed" name="breed" type="text" required />
+              </div>
+
+              <div class="form-group">
+                <label for="age">Age</label>
+                <input id="age" name="age" type="number" min="0" required />
+              </div>
+
+              <div class="form-group">
+                <label for="weight">Weight in Pounds</label>
+                <input id="weight" name="weight" type="number" min="1" required />
+              </div>
+
+              <div class="form-group">
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                  <option value="">Choose one</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="fixed">Spayed or Neutered?</label>
+                <select id="fixed" name="fixed">
+                  <option value="">Choose one</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                  <option value="not-sure">Not Sure</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Diet & Lifestyle</legend>
+
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="current-diet">Current Diet</label>
+                <select id="current-diet" name="current-diet" required>
+                  <option value="">Choose one</option>
+                  <option value="kibble">Kibble</option>
+                  <option value="canned-food">Canned Food</option>
+                  <option value="fresh-food">Fresh Food</option>
+                  <option value="raw-food">Raw Food</option>
+                  <option value="mixed-diet">Mixed Diet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="activity">Activity Level</label>
+                <select id="activity" name="activity" required>
+                  <option value="">Choose one</option>
+                  <option value="low">Low</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="high">High</option>
+                  <option value="working-dog">Working Dog</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="meals">Meals Per Day</label>
+                <select id="meals" name="meals">
+                  <option value="">Choose one</option>
+                  <option value="one">1 meal per day</option>
+                  <option value="two">2 meals per day</option>
+                  <option value="three">3 meals per day</option>
+                  <option value="varies">It varies</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="goal">Primary Goal</label>
+                <select id="goal" name="goal" required>
+                  <option value="">Choose one</option>
+                  <option value="transition-to-raw">Transition to Raw</option>
+                  <option value="weight-management">Weight Management</option>
+                  <option value="more-energy">More Energy</option>
+                  <option value="healthy-coat">Healthier Coat</option>
+                  <option value="digestive-support">Digestive Support</option>
+                  <option value="general-wellness">General Wellness</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Health Notes</legend>
+
+            <div class="form-group">
+              <label for="allergies">Allergies or Food Sensitivities</label>
+              <textarea id="allergies" name="allergies" rows="4" placeholder="Example: chicken allergy, sensitive stomach, itchy skin"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="health-concerns">Health Concerns</label>
+              <textarea id="health-concerns" name="health-concerns" rows="4" placeholder="Example: digestion issues, weight concerns, low energy, senior dog needs"></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="notes">Anything Else We Should Know?</label>
+              <textarea id="notes" name="notes" rows="5"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="form-disclaimer">
             <p>
-                Create a personalized profile for your dog to receive tailored meal recommendations and nutrition advice.
-                Our team of experts will help you choose the best meals to support your dog's health and well-being.
+              This form is for meal recommendation purposes only and is not a
+              substitute for veterinary advice. Please consult your veterinarian
+              before making major dietary changes, especially if your dog has a
+              medical condition.
             </p>
-        </section>
+          </div>
 
-        <!-- Pet profile form or content goes here -->
-         <section class="profile" id="profile">
-            <p class="eyebrow">Get Started</p>
-            <h2>Create Your Pet Profile</h2>
-            <p>Tell us about your dog and we'll help guide you toward the right meal plan.</p>
+          <button type="submit" class="btn primary">
+            Get My Meal Recommendation
+          </button>
 
-            <form>
-                <input type="text" placeholder="Your Name" required />
-                <input type="email" placeholder="Email Address" required />
-                <input type="text" placeholder="Dog's Name" required />
-                <input type="text" placeholder="Dog's Breed" required />
-                <input type="number" placeholder="Dog's Age" required />
-                <input type="number" placeholder="Dog's Weight (lbs)" required />
-                <textarea placeholder="Any special dietary needs or health concerns?" required></textarea>
-                <button type="submit" class="btn primary">Submit</button>
-            </form>
-        </section>
-    </main>
+          <p class="form-note">
+            We'll review your dog's profile and contact you with personalized recommendations.
+          </p>
+        </form>
+      </div>
 
-    <footer class="footer" id="contact">
-        <p>&copy; 2026 Feed Them As Family. All rights reserved. | Website made with ❤️ by BlznDoll Designs</p>
-    </footer>
+      <aside class="profile-sidebar">
+        <div class="profile-side-card">
+          <i class="fa-solid fa-clipboard-list"></i>
+          <h3>What Happens Next?</h3>
+          <ol>
+            <li>You submit your dog’s profile.</li>
+            <li>We review their needs and goals.</li>
+            <li>We recommend meal options.</li>
+            <li>You choose what works best.</li>
+          </ol>
+        </div>
+
+        <div class="profile-side-card">
+          <i class="fa-solid fa-circle-info"></i>
+          <h3>Helpful Tip</h3>
+          <p>
+            The more details you share, the better we can understand your dog’s
+            needs and recommend the right meals.
+          </p>
+        </div>
+
+        <div class="profile-side-card">
+          <i class="fa-solid fa-paw"></i>
+          <h3>Need Help First?</h3>
+          <p>
+            Not ready to complete the profile? Contact us and we’ll answer your
+            raw feeding questions.
+          </p>
+          <a href="contact.html" class="text-link">Contact Us</a>
+        </div>
+      </aside>
+    </section>
+
+    <section class="how-profile-works">
+      <p class="eyebrow">How It Works</p>
+      <h2>From Profile To Meal Plan</h2>
+
+      <div class="steps">
+        <div class="step">
+          <span>1</span>
+          <h3>Submit Profile</h3>
+          <p>Tell us about your dog’s body, diet, habits, and goals.</p>
+        </div>
+
+        <div class="step">
+          <span>2</span>
+          <h3>We Review</h3>
+          <p>We look over the information to understand your dog’s needs.</p>
+        </div>
+
+        <div class="step">
+          <span>3</span>
+          <h3>We Recommend</h3>
+          <p>You receive meal suggestions that fit your dog’s lifestyle.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile-faq">
+      <p class="eyebrow">Pet Profile FAQ</p>
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>Is the Pet Profile free?</summary>
+        <p>
+          Yes. The Pet Profile helps us understand your dog before recommending
+          meal options.
+        </p>
+      </details>
+
+      <details>
+        <summary>Can I fill this out for more than one dog?</summary>
+        <p>
+          Yes. If you have multiple dogs, please submit a separate profile for
+          each dog so we can review their needs individually.
+        </p>
+      </details>
+
+      <details>
+        <summary>Do you help first-time raw feeders?</summary>
+        <p>
+          Yes. We can help you understand meal options and how to begin the raw
+          feeding process safely.
+        </p>
+      </details>
+
+      <details>
+        <summary>Will this replace my veterinarian’s advice?</summary>
+        <p>
+          No. Our recommendations are for food guidance only. Always speak with
+          your veterinarian about medical conditions, allergies, or major diet changes.
+        </p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Feed Them As Family. All rights reserved.</p>
+    <p>Website made with ❤️ by Jacqueline McRoberts</p>
+  </footer>
+</body>
 </html>
